@@ -13,7 +13,7 @@ public class RewardByDiscountService extends RewardService {
         RewardInformation rewardInformation = new RewardInformation();
 
         if(customerPoints >= neededPoints) {
-            // if costomer enough points apply discount
+            // if customer has enough points then apply discount
             double orderTotal = calculateTotal(order);
             double discount = orderTotal * getPercentage();
             rewardInformation = new RewardInformation(getPointsRedeem(), discount);
