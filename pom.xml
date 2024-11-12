@@ -3,12 +3,7 @@
     <groupId>org.jugistanbul</groupId>
     <artifactId>MutationTesting</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-    </properties>
-  
+
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -57,13 +52,13 @@
                 </dependencies>
                 <configuration>
                     <targetClasses>
-                        <param>com.wiredbraincoffee.reward.*</param>
+                        <param>org.jugistanbul.reward.*</param>
                     </targetClasses>
 			        <mutators>
-			            <!-- <mutator>DEFAULTS</mutator> -->
+			            <mutator>DEFAULTS</mutator>
 				        <!-- <mutator>STRONGER</mutator> -->
-				        <mutator>ALL</mutator>
-				    </mutators>
+                        <!-- <mutator>ALL</mutator> -->
+                    </mutators>
                 </configuration>
              </plugin>
         </plugins>
