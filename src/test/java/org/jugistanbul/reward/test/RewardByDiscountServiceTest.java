@@ -31,6 +31,8 @@ public class RewardByDiscountServiceTest {
 
         RewardInformation info = reward.applyReward(order, 0);
 
+        System.out.println("hello africa");
+
         assertEquals(0, info.getDiscount());
         assertEquals(0, info.getPointsRedeemed());
     }
@@ -42,6 +44,8 @@ public class RewardByDiscountServiceTest {
         List<Product> order = Collections.singletonList(smallDecaf);
 
         RewardInformation info = reward.applyReward(order, 100);
+
+        System.out.println("hello africa");
 
         assertEquals(0.199, info.getDiscount());
         assertEquals(reward.getPointsRedeem(), info.getPointsRedeemed());
