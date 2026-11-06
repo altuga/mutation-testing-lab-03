@@ -4,6 +4,10 @@ import org.jugistanbul.product.Product;
 
 import java.util.List;
 
+/**
+ * RewardByDiscountService is a concrete implementation of RewardService that applies a discount to the order total based on the customer's points.
+ * It calculates the discount as a percentage of the order total and returns the reward information.
+ */
 public class RewardByDiscountService extends RewardService {
     private double percentage;
 
